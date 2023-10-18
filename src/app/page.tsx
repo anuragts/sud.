@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Knowmore from "./components/buttons/Knowmore";
 import Collage from "./components/Collage";
 

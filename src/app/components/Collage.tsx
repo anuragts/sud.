@@ -1,30 +1,41 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function Collage() {
     return (
-        <div className="">
-            <motion.div whileHover={{ y: -5 }} transition={{
-                type: "spring",
-            }} whileTap={{scale:0.9}}>
-
-                <Image src="/pic2.jpeg" className="border-4 rounded-[4rem] border-[#000000]" alt="Image 2" width={250} height={250} />
+        <div className="text-center lg:text-left">
+            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring" }} whileTap={{ scale: 0.9 }}>
+                <img
+                    src="/pic2.jpeg"
+                    className="border-4 rounded-[4rem] lg:w-[250px]  border-[#000000] max-w-[100%] max-h-[100%]"
+                    alt="Image 2"
+                   
+                />
             </motion.div>
-            <motion.div whileHover={{ x: 5 }} transition={{
-                type: "spring",
-            }} whileTap={{scale:0.9}}>
-                <Image src="/pic3.jpg" className="border-4 mt-[-10rem] ml-[10rem] rotate-12	 rounded-[4rem] border-[#000000]" alt="Image 3" width={250} height={300} />
-            </motion.div >
-            <motion.div whileHover={{ y: 5, x: -5 }} transition={{
-                type: "spring",
-            }} whileTap={{scale:0.9}}>
-                <Image src="/pic1.jpeg" className="border-4 mt-[-15rem] -rotate-12 rounded-[4rem] border-[#000000]" alt="Image 1" width={250} height={250} />
-            </motion.div >
-            <motion.div whileHover={{}} >
-                <Image src="/arrow.png" className="ml-[30rem] mt-[-28rem]" alt="Image 1" width={250} height={250} />
-            </motion.div >
-
+            <motion.div whileHover={{ x: 5 }} transition={{ type: "spring" }} whileTap={{ scale: 0.9 }}>
+                <img
+                    src="/pic3.jpg"
+                    className="border-4 lg:mt-[-10rem] lg:ml-[10rem] w-125px lg:w-[250px] rounded-[4rem] lg:rotate-12 border-[#000000] max-w-[100%] max-h-[100%]"
+                    alt="Image 3"
+               
+                />
+            </motion.div>
+            <motion.div whileHover={{ y: 5, x: -5 }} transition={{ type: "spring" }} whileTap={{ scale: 0.9 }}>
+                <img
+                    src="/pic1.jpeg"
+                    className="border-4 lg:mt-[-15rem] lg:w-[250px]  lg:-rotate-12 rounded-[4rem] border-[#000000] max-w-[100%] max-h-[100%]"
+                    alt="Image 1"
+                   
+                />
+            </motion.div>
+            <motion.div whileHover={{}}>
+                <img
+                    src="/arrow.png"
+                    className="lg:ml-[30rem] lg:mt-[-28rem] max-w-[100%] max-h-[100%]"
+                    alt="Image 1"
+                   
+                />
+            </motion.div>
         </div>
-    )
+    );
 }
